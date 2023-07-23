@@ -36,7 +36,12 @@ class MostPopularListView extends StatelessWidget {
                 child: CircularProgressIndicator(),
               );
             case MostPopularState.success:
-              return MostPopularListTile(state: state);
+              if (state.mostPopularResponse.isNotEmpty) {
+                return MostPopularListTile(state: state);
+              }
+              return const Center(
+                child: Text(TextConstants.isEmpty),
+              );
 
             case MostPopularState.failure:
               return const Center(child: Text(TextConstants.errorMesssage));

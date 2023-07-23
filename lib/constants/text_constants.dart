@@ -5,4 +5,5 @@ class TextConstants {
   static const appBarDetailTitle = "NY Times Most Popular Detail";
   static const unauthorized = "401 Unauthorized";
   static const appBarKey = "AppBar Key";
+  static const isEmpty = "Veri Yok";
 }

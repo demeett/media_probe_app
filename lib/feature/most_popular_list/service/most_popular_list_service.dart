@@ -2,6 +2,7 @@
 import 'dart:developer';
 import 'dart:io';
 
+import 'package:media_probe_app/constants/service_constants.dart';
 import 'package:media_probe_app/core/base/app_result.dart';
 import 'package:media_probe_app/core/dio/dio_http_client.dart';
 import 'package:media_probe_app/feature/most_popular_list/model/most_popular_response.dart';
@@ -14,7 +15,7 @@ class MostPopularListService {
 
   Future<AppResult<MostPopularResponse>> getMostPopuler({int period = 1}) async {
     try {
-      final response = await _dioHttpClient!.get("$period.json?api-key=C9WJT127NPWVCCbLToArmn8i3FG1Mxf4");
+      final response = await _dioHttpClient!.get("$period.json?api-key=${ServiceConstants.apiKey}");
       if (response.statusCode == HttpStatus.ok) {
         return AppResult.fromSuccess(MostPopularResponse.fromJson(response.items));
       } else {
