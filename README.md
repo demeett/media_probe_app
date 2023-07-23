@@ -8,7 +8,7 @@ This app is a mobile application that lists news articles using the NY Times Mos
 -Navigating to detail page when a list item is clicked
 -A widget test to verify the news article title in the detail page
 -Sorting articles based on their publish dates using the sort function.
--
+
   
 ## Used Packages and Architectures
 
