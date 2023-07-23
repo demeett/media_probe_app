@@ -8,13 +8,15 @@ This app is a mobile application that lists news articles using the NY Times Mos
 -Navigating to detail page when a list item is clicked
 -A widget test to verify the news article title in the detail page
 -Sorting articles based on their publish dates using the sort function.
+-
   
 ## Used Packages and Architectures
 
-- Dio: Used for making HTTP requests. Utilized to connect to the NY Times Most Popular API.
+- Dio: Used for making HTTP requests. Utilized to connect to the NY Times Most Popular API. Error checks were made.
 - GetIt: Used for dependency injection. Helps manage dependencies for services.
 - Cubit: Used for state management in the app. Cubits are employed to manage the news list and the content in the detail page.
-- Cubit Architecture: An implementation of MVVM architecture using Cubit. 
+- Cubit Architecture: An implementation of MVVM architecture using Cubit.
+- Script.sh: The script.sh file was used to create the model.
   
 ## Tests
 
