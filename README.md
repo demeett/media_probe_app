@@ -1,16 +1,25 @@
-# media_probe_app
+# Most Popular News App
 
-A new Flutter project.
+This app is a mobile application that lists news articles using the NY Times Most Popular API and navigates to a detail page when each news item is clicked. The app is developed using Flutter and utilizes the Dio package for fetching news articles, while using the GetIt package for managing dependencies.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+-Fetching news articles using the NY Times Most Popular API
+-Navigating to detail page when a list item is clicked
+-A widget test to verify the news article title in the detail page
+-Sorting articles based on their publish dates using the sort function.
+  
+## Used Packages and Architectures
 
-A few resources to get you started if this is your first Flutter project:
+- Dio: Used for making HTTP requests. Utilized to connect to the NY Times Most Popular API.
+- GetIt: Used for dependency injection. Helps manage dependencies for services.
+- Cubit: Used for state management in the app. Cubits are employed to manage the news list and the content in the detail page.
+- Cubit Architecture: An implementation of MVVM architecture using Cubit. 
+  
+## Tests
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+There are two types of tests in the app:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Unit Tests: Written to test the HTTP requests made using the Dio package to the Most Popular API.
+
+2. Widget Tests: A widget test to verify the title in the app bar on the detail page.
