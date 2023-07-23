@@ -14,6 +14,7 @@ This app is a mobile application that lists news articles using the NY Times Mos
 
 - Dio: Used for making HTTP requests. Utilized to connect to the NY Times Most Popular API. Error checks were made.
 - GetIt: Used for dependency injection. Helps manage dependencies for services.
+- Json Serializable:It was used to create the model.
 - Cubit: Used for state management in the app. Cubits are employed to manage the news list and the content in the detail page.
 - Cubit Architecture: An implementation of MVVM architecture using Cubit.
 - Script.sh: The script.sh file was used to create the model.
