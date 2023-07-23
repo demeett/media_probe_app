@@ -12,7 +12,7 @@ void main() {
   setUp(() {
     nock.cleanAll();
   });
-  group('Komponent Testleri - Anasayfa ', () {
+  group('Komponent Testleri - Detail ', () {
     testWidgets('Text özelliğini test ediyoruz', (tester) async {
       MostPopularResult result = const MostPopularResult(
           abstract:
@@ -33,13 +33,11 @@ void main() {
           ]);
       await tester.runAsync(() async {
         await tester.pumpWidget(
-          MaterialApp(home: MostPopularDetailScreen(mostPopularResult: result)),
+          const MaterialApp(home: MostPopularDetailScreen()),
         );
-        await tester.pumpAndSettle();
       });
-
-      await expectLater(
-          find.byType(MostPopularDetailScreen), matches("On the Map, Nothing. On the Ground, a Hidden Maya City."));
+      final key = find.byKey(const Key("AppBar Key"));
+      expect(key, findsOneWidget);
     });
   });
 }

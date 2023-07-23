@@ -4,4 +4,5 @@ class TextConstants {
   static const errorMesssage = "Hata Oluştu";
   static const appBarDetailTitle = "NY Times Most Popular Detail";
   static const unauthorized = "401 Unauthorized";
+  static const appBarKey = "AppBar Key";
 }
